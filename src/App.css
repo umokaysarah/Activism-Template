@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.navbar-dark {
+  background-color: rgb(59, 59, 59);
+
+}
+
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.nav-link:hover .home:after {content: ""}
+.nav-link:hover .home:before { content: "Home" }
+
+.nav-link:hover .educate:after {content: ""}
+.nav-link:hover .educate:before { content: "Educate" }
+
+.nav-link:hover .support:after {content: ""}
+.nav-link:hover .support:before { content: "Support" }
+
+.nav-link:hover .advocate:after {content: ""}
+.nav-link:hover .advocate:before { content: "Advocate" }

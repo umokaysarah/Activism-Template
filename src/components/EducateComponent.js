@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BOOKS } from '../shared/EducateResources/books';
 import { MOVIES } from '../shared/EducateResources/movies';
+import { PODCASTS } from '../shared/EducateResources/podcasts';
 import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 
 
@@ -13,6 +14,7 @@ class Educate extends Component{
         this.state={
             books: BOOKS,
             movies: MOVIES,
+            podcasts: PODCASTS,
             currentInfo: null,
             currentInfoType: 99
         };
@@ -33,16 +35,16 @@ renderInfo(){
     if(this.state.currentInfoType === 1)
     return(
         <div>
-            {this.renderBooks(this.state.currentInfo)}
+            {this.renderMedia(this.state.currentInfo)}
         </div>
     );
 
 }
 
-renderBooks(books){
+renderMedia(media){
 
-    const Books = books.map((book)=>{
-        const linkList = book.links.map((link)=>{
+    const Media = media.map((media)=>{
+        const linkList = media.links.map((link)=>{
             return(
                 <div>
                 <a href={link.url}>{link.name}</a>
@@ -52,15 +54,15 @@ renderBooks(books){
         return(
             <Card>
                 <CardBody>
-                    <h5 className="card-title">{book.title}</h5>
-                    <h6 className="card-subtitle text-muted mb-2">{book.author}</h6>
-                    <h6 className="card-subtitle text-muted">{book.date}</h6>
+                    <h5 className="card-title">{media.title}</h5>
+                    <h6 className="card-subtitle text-muted mb-2">{media.author}</h6>
+                    <h6 className="card-subtitle text-muted">{media.date}</h6>
                     <div className="row align-items-center">
                         <div className="col-sm">
-                            <img src={book.image} className="card-img mt-3 mb-3" />
+                            <img src={media.image} className="card-img mt-3 mb-3" />
                         </div>
                         <div className="col-sm">
-                            <p>{book.description}</p>
+                            <p>{media.description}</p>
                             {linkList}
                         </div>
                     </div>
@@ -70,7 +72,7 @@ renderBooks(books){
 
     });
     return(
-        <div>{Books}</div>
+        <div>{Media}</div>
     );
 }
 
@@ -88,7 +90,9 @@ render(){
                     <li className="list-group-item"
                     onClick={this.infoSelect.bind(this, this.state.movies, 1)}
                     >Movies/Shows</li>
-                    <li className="list-group-item">Podcasts</li>
+                    <li className="list-group-item"
+                    onClick={this.infoSelect.bind(this, this.state.podcasts, 1)}
+                    >Podcasts</li>
                     <li className="list-group-item">Current Events</li>
                 </div>
                 <div>

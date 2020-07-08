@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BOOKS } from '../shared/EducateResources/books';
 import { MOVIES } from '../shared/EducateResources/movies';
 import { PODCASTS } from '../shared/EducateResources/podcasts';
+import { CURRENTEVENTS } from '../shared/EducateResources/current';
 import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 
 
@@ -15,6 +16,7 @@ class Educate extends Component{
             books: BOOKS,
             movies: MOVIES,
             podcasts: PODCASTS,
+            currentEvents: CURRENTEVENTS,
             currentInfo: null,
             currentInfoType: 99
         };
@@ -55,13 +57,13 @@ renderMedia(media){
             <Card>
                 <CardBody>
                     <h5 className="card-title">{media.title}</h5>
-                    <h6 className="card-subtitle text-muted mb-2">{media.author}</h6>
+                    <h6 className="card-subtitle text-muted m-2">{media.creator}</h6>
                     <h6 className="card-subtitle text-muted">{media.date}</h6>
-                    <div className="row align-items-center">
-                        <div className="col-sm">
+                    <div>
+                        <div className="">
                             <img src={media.image} className="card-img mt-3 mb-3" />
                         </div>
-                        <div className="col-sm">
+                        <div className="ml-3 mr-3">
                             <p>{media.description}</p>
                             {linkList}
                         </div>
@@ -93,7 +95,9 @@ render(){
                     <li className="list-group-item"
                     onClick={this.infoSelect.bind(this, this.state.podcasts, 1)}
                     >Podcasts</li>
-                    <li className="list-group-item">Current Events</li>
+                    <li className="list-group-item"
+                    onClick={this.infoSelect.bind(this, this.state.currentEvents, 1)}
+                    >Current Events</li>
                 </div>
                 <div>
                     {this.renderInfo()}

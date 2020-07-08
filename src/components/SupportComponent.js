@@ -7,7 +7,7 @@ function Support(props) {
                 <div className="list-group list-group-flush">
                     <li className="list-group-item">Donate</li>
                     <li className="list-group-item">Organizations to Follow</li>
-                    <li className="list-group-item">Buisnesses to Support</li>
+                    <li className="list-group-item">Businesses to Support</li>
                 </div>
             </div>
         </div>

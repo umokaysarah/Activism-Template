@@ -3,6 +3,7 @@ import { BOOKS } from '../shared/EducateResources/books';
 import { MOVIES } from '../shared/EducateResources/movies';
 import { PODCASTS } from '../shared/EducateResources/podcasts';
 import { CURRENTEVENTS } from '../shared/EducateResources/current';
+import { EDUCATE } from '../shared/Educate';
 import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 
 
@@ -17,6 +18,7 @@ class Educate extends Component{
             movies: MOVIES,
             podcasts: PODCASTS,
             currentEvents: CURRENTEVENTS,
+            educate: EDUCATE,
             currentInfo: null,
             currentInfoType: 99
         };
@@ -86,8 +88,8 @@ render(){
             <div className="container text-center">
                 <div className="list-group list-group-flush mb-4">
                     <li className="list-group-item" 
-                    onClick={this.infoSelect.bind(this, this.state.books, 1)}>
-                    Books
+                    onClick={this.infoSelect.bind(this, this.state.educate.info, 1)}>
+                    {this.state.educate.title}
                     </li>
                     <li className="list-group-item"
                     onClick={this.infoSelect.bind(this, this.state.movies, 1)}

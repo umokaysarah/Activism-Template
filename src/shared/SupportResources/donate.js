@@ -1,91 +1,57 @@
 export const DONATIONS = [
     {
         id: 0,
-        title: "Example Podcast 1",
-        creator: "Someone Cool",
-        date: "Recorded 2018",
+        title: "Example Donation Site 1",
+        creator: "can probably be left blank or used as a subtitle",
+        date: "date is also probably not relevant",
         image: "",
-        description: "This is a great podcast to listen to",
+        description: "Here's what this organization/charity does and why you should donate.",
         links: [
             {
              url: "https://www.google.com/",
-             name: "Listen on Spotify"
-            },
-            {
-              url:  "https://www.amazon.com/",
-              name: "Listen on Amazon"
+             name: "Donate Here"
             }
         ]
     },
     {
         id: 1,
-        title: "Example Podcast 2",
-        creator: "Someone Informed",
-        date: "Recorded 2020",
+        title: "Example Donation Site 2",
+        creator: "",
+        date: "",
         image: "/assets/images/podcast.png",
-        description: "Really informative podcast",
+        description: "Here's what this organization/charity does and why you should donate.",
         links: [
             {
              url: "https://www.google.com/",
-             name: "Listen on Spotify"
-            },
-            {
-              url:  "https://www.amazon.com/",
-              name: "Listen on Amazon"
+             name: "Donate Here"
             }
         ]
     },
     {
         id: 2,
-        title: "Example Podcast 3",
-        creator: "Someone Cool",
-        date: "Recorded 2012",
-        image: "/assets/images/podcast.png",
-        description: "Really informative podcast",
+        title: "Example Donation Site 3",
+        creator: "",
+        date: "",
+        image: "",
+        description: "Here's what this organization/charity does and why you should donate.",
         links: [
             {
              url: "https://www.google.com/",
-             name: "Listen on Spotify"
-            },
-            {
-              url:  "https://www.amazon.com/",
-              name: "Listen on Amazon"
+             name: "Donate Here"
             }
         ]
     },
     {
         id: 3,
-        title: "Example Podcast 4",
-        creator: "Someone Cool",
-        date: "Recorded 2016",
+        title: "Example Donation Site 4",
+        creator: "",
+        date: "",
         image: "",
-        description: "Really informative podcast",
+        description: "Here's what this organization/charity does and why you should donate.",
         links: [
             {
              url: "https://www.google.com/",
-             name: "Listen on Spotify"
-            },
-            {
-              url:  "https://www.amazon.com/",
-              name: "Listen on Amazon"
-            }
-        ]
-    },
-    {
-        id: 4,
-        title: "Example Podcast 5",
-        creator: "Someone Cool",
-        date: "Recorded 2019",
-        image: "/assets/images/podcast.png",
-        description: "Really informative podcast",
-        links: [
-            {
-             url: "https://www.google.com/",
-             name: "Listen on Spotify"
-            },
-            {
-              url:  "https://www.amazon.com/",
-              name: "Listen on Amazon"
+             name: "Donate Here"
             }
         ]
     }

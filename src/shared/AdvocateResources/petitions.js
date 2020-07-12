@@ -1,4 +1,4 @@
-export const DONATIONS = [
+export const PETITIONS = [
     {
         id: 0,
         title: "Example Petition 1",
@@ -32,7 +32,7 @@ export const DONATIONS = [
         title: "Example Petition 3",
         creator: "",
         date: "",
-        image: "/assets/images/podcast.png",
+        image: "",
         description: "Here's what this petition is working towards and why you should sign.",
         links: [
             {

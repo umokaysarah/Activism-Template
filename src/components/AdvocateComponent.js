@@ -1,17 +1,72 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { ADVOCATE } from '../shared/Advocate';
+import { renderMedia } from '../shared/componentFunctions'
 
-function Advocate(props) {
+
+class Advocate extends Component{
+
+    constructor(props){
+        super(props);
+
+        this.state={
+            advocate: ADVOCATE,
+            currentInfo: null
+        };
+        this.infoSelect = this.infoSelect.bind(this);
+    }
+
+    infoSelect(infoSelected){
+        this.setState(state => ({
+            currentInfo: infoSelected
+          }));
+          
+    }
+    
+    renderInfo(){
+    if(this.state.currentInfo != null)
     return(
         <div>
-            <div className="container text-center">
-            <div className="list-group list-group-flush">
-                    <li className="list-group-item">Petitions to sign</li>
-                    <li className="list-group-item">Numbers to Call</li>
-                    <li className="list-group-item">Find your Representatives</li>
-                </div>
-            </div>
+            {renderMedia(this.state.currentInfo)}
         </div>
     );
+    
+    }
+
+    renderHeader(header){
+
+        const Header = header.map((header)=>{
+            return(
+                <div>
+                    <div className="list-group-flush">
+                    <li className="list-group-item" 
+                       onClick={this.infoSelect.bind(this, header.info)}>
+                        {header.title}
+                    </li>
+                    </div>
+                </div>
+            );
+        
+        
+        });
+        return(       
+            <div className="list-group list-group-flush">
+                {Header}
+            </div>
+        );
+        }
+
+    render(){
+        return(
+            <div className="container text-center">
+                {this.renderHeader(this.state.advocate)}
+                
+                <div>
+                    {this.renderInfo()}
+                </div>
+            </div>
+        );
+
+}
 
 }
 

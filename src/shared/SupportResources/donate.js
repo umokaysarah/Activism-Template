@@ -18,7 +18,7 @@ export const DONATIONS = [
         title: "Example Donation Site 2",
         creator: "",
         date: "",
-        image: "/assets/images/podcast.png",
+        image: "",
         description: "Here's what this organization/charity does and why you should donate.",
         links: [
             {

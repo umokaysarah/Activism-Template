@@ -1,3 +1,5 @@
+## Detailed instructions on how to use this website template coming soon!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

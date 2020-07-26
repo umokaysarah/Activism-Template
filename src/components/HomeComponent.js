@@ -5,8 +5,9 @@ function Home(props) {
         
         <div>
             <div className="container text-center">
-                <h1 className="mt-2">Name of Cause</h1>
-                <p className="border p-3 m-3">Here's a short description of the cause. 
+                <img class='img-front' src='/assets/images/book.jpg'/>
+                <h2 className="mt-2">Name of Cause</h2>
+                <p className="border p-3 ">Here's a short description of the cause. 
                     Why it's important, who's effected by it, etc.
                     Put whatever you want here. Add more paragraph's
                     if you'd like. It's up to you. This is here to give

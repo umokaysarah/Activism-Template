@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Main from './components/MainComponent';
-import logo from './logo.svg';
 import './App.css';
+import './shared/styles.css'
 import { BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
   render () {
     return (
       <BrowserRouter>
-        <div>
+        <div class="allComponents">
           <Main />
         </div>
       </BrowserRouter>

@@ -53,7 +53,7 @@ renderHeader(header){
     
     });
     return(       
-        <div className="list-group list-group-flush">
+        <div>
             {Header}
         </div>
     );

@@ -4,15 +4,10 @@ import Header from './HeaderComponent';
 import Advocate from './AdvocateComponent';
 import Educate from './EducateComponent';
 import Support from './SupportComponent';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 class Main extends Component{
-
-    constructor(props){
-        super(props);
-    
-      }
 
       render() {
 

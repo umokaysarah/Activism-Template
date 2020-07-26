@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { SUPPORT } from '../shared/Support';
-import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 import { renderMedia } from '../shared/componentFunctions'
 
 
@@ -50,7 +49,7 @@ renderHeader(header){
 
     });
     return(       
-        <div className="list-group list-group-flush">
+        <div>
             {Header}
         </div>
     );

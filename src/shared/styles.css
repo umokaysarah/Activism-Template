@@ -1,0 +1,40 @@
+.navbar-dark {
+    background-color: rgb(59, 59, 59);
+  
+}
+h2, h5, h6 {
+    font-family: 'Arial';
+    color: rgb(43, 43, 43);
+}
+p {
+    font-family: 'Arial';
+    color: rgb(43, 43, 43);
+}
+
+html {
+    background-color: white;
+}
+.allComponents {
+    background-color: white;
+}
+.card {
+    background: pink !important;
+    
+}
+.card-title {
+    color: black;
+}
+.card-subtitle{
+    color: rgb(82, 82, 82);
+}
+
+.list-group-item{
+    background: white !important;
+    color: black !important;
+}
+.link {
+    color: white;
+  }
+ .link:hover {
+     color: black;
+ } 

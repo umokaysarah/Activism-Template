@@ -49,7 +49,7 @@ class Advocate extends Component{
         
         });
         return(       
-            <div className="list-group list-group-flush">
+            <div>
                 {Header}
             </div>
         );

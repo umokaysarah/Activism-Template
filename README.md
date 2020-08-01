@@ -1,4 +1,34 @@
-## Detailed instructions on how to use this website template coming soon!
+# Make your own website- no coding necessary!
+
+Seeing the massive influx of information and resources over social media as the BLM movement has gained momentum inspired me to make this website template.
+
+I created this so that anyone who had resources to share could do so efficiently. Doesn't matter what your cause is- Black Lives Matter, saving the turtles, womens rights, etc, any information you have so that people can educate themselves and get involved can be easily organized in this website. 
+
+## Creating a website with this template involves only 3 steps:
+1. Download the template code onto your computer
+2. Input any information you want to include
+3. Build and deploy your website
+
+If it still seems scary- reach out to me anytime via email or instagram. I can help you through the process or even do it for you - all I need is the resources you want included. 
+
+## Step by Step instructions
+
+### Download the template
+
+Downloading is easy through github. If you don't know anything about gitHub, I suggest simply downloading the zip file as shown below. 
+If you do know github- feel free to clone or download the files how you want. 
+
+Then unzip the file in a convient place on your computer (like the desktop or a dedicated folder)
+
+### Input your resources
+
+You'll want to have some sort of text editor for this part. A good simple one would be [SublimeText](https://www.sublimetext.com/). I use [Visual Studio Code](https://code.visualstudio.com/)
+
+Open the template in your desired text editor.
+
+
+
+----------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

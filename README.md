@@ -1,4 +1,6 @@
-# Make your own website- no coding necessary!
+# Full tutorial coming soon! 
+
+## Make your own website- no coding necessary!
 
 Seeing the massive influx of information and resources over social media as the BLM movement has gained momentum inspired me to make this website template.
 
